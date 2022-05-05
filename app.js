@@ -33,7 +33,6 @@ const repos = require('./public/data/React-JS.json');
 // *********************************************************** //
 
 const mongoose = require( 'mongoose' );
-//const mongodb_URI = 'mongodb://localhost:27017/cs103a_todo'
 const mongodb_URI =
   'mongodb+srv://jianhe:666@cluster0.h0lin.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
