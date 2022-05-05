@@ -1,10 +1,10 @@
 <ul>
     <% for (repo of repos){%>
         <li> 
-            <a href="/saved/remove/<%= repo._id %>">X</a>
             <%= repo.repo_name %>
             <%= repo.language %>
             <%= repo.username %>
+            <a href="/saved/remove/<%= repo._id %>">[Delete]</a>
         </li>
     <% } %>
 </ul>

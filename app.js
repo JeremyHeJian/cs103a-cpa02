@@ -261,7 +261,7 @@ app.get('/saved/show',
   }
 )
 
-app.get('/saved/remove/:reopId',
+app.get('/saved/remove/:repoId',
   // remove a repo from the user's saved
   async (req,res,next) => {
     try {
