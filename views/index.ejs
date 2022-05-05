@@ -1,0 +1,39 @@
+
+
+    <div class="jumbotron">
+        <h1>CPA2: Find most popular React.JS repositories </h1>
+        <p></p>
+    </div>
+
+    <p class="p-3 m-3 border border-primary bg-light">
+        This app is intended to help you search for some of the most popular ReactJS repositories on Github. <br>
+        You must signup or login to see
+        the repos and create your bookmarks.
+    </p>
+    
+    <% if (true || loggedIn) {%>  
+        <form method="post" action="/repos/byRepoName">
+            Show repos by repo name: 
+              <input type="text" name="repo_name" 
+                     placeholder="e.g. todomvc">
+            <input type="submit">
+        </form>
+        <br>
+        <form method="post" action="/repos/byLanguage">
+            Show repos by language: 
+            <input type="text" name="language" 
+                   placeholder="e.g. JavaScript">
+            <input type="submit">
+        </form>
+        <br>
+        <form method="post" action="/repos/byUsername">
+            Show repos by username: 
+            <input type="text" name="username" 
+                   placeholder="e.g. tastejs">
+            <input type="submit">
+        </form>
+        <br>
+        <a href="/saved/show">Show saved repos</a>
+    <% } %>
+
+

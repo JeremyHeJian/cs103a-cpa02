@@ -1,0 +1,33 @@
+<div class="bg-light m-5 p-2 border border-primary border-2">
+    <div class="">
+        <strong><%= repo.repo_name %></strong>
+    </div>
+    <div class="mb-1">
+        Name: <%= repo.repo_name %> <br>
+        Author: <%= repo.username %> <br>
+        Language: <%= repo.language %> <br>
+    </div>
+    <div><a href="/addRepo/<%= repo['_id'] %>">(save to your favorite)</a></div>
+    <div class="mb-1">
+       Star: <%=repo.stars %>,
+       Fork: <%=repo.forks %>,
+       Subscriber: <%= repo.subscribers %>
+       Open issues: <%= repo.open_issues %>
+       <br>
+       Type: <%= repo.type %> <br>
+       Created: <%= repo.created %>
+    </div>
+    <div class="">
+        <em><%=repo.description %></em>
+    </div>
+</div>
+
+<hr>
+<!-- 
+<pre>
+    <%= JSON.stringify(repo,null,5) %>
+</pre>
+-->
+<pre>
+    <%= JSON.stringify(repo,null,5) %>
+</pre>

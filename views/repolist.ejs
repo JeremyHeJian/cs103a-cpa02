@@ -1,0 +1,56 @@
+<h1>The repos are</h1>
+Here we want a ul list with the instructor, coursenum, title, term
+<hr>
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>Repository Name</th>
+            <th>Username</th>
+            <th>Language</th>
+            <th>Stars/forks/subscribers</th>
+            <th>Created time</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody></tbody>
+    <% for (repo of repos) {
+        const reponame = repo.repo_name;
+        const username = repo.username;
+        const language = repo.language;
+        const stars = repo.stars;
+        const forks = repo.forks;
+        const subscribers = repo.subscribers;
+        const created = repo.created;
+         %>
+      <tr class="mb-2"> 
+        <td>
+            <a href="/repos/show/<%=repo._id %>">
+            <%= reponame %>
+            </a>
+        </td>
+
+        <td>
+            <%= username %>
+        </td>
+
+        <td>
+            <%= language %>
+        </td>
+
+        <td>
+            <%= stars %>/<%= forks %>/<%= subscribers %>
+        </td>
+
+        <td>
+            <%= created %>
+        </td>
+    </tr>
+    <% } %>
+    </tbody>
+</table>
+
+<pre>
+    <!-- 
+        <%= JSON.stringify(repos,null,5) %> 
+    -->
+</pre>
