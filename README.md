@@ -19,3 +19,6 @@ Screenshots:
 Link: https://repo-search-jianhe.herokuapp.com/  
 clone the repo, run npm install, change the server url in line 37 in app.js to your local server address.  
 Go to url/upsertDB to upsert DB to your local server.
+
+## Demo video
+https://drive.google.com/file/d/1cRrypVqck99WBTRD-x3gix_9WWkY5ucB/view?usp=sharing
